@@ -1,0 +1,23 @@
+@import "src/constants/variables.scss";
+
+.main {
+  height: 50px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-bottom: 1px solid #c0c0c0;
+  .logo {
+    h1 {
+      color: black;
+      font-size: 24px;
+    }
+  }
+  .btn {
+    height: 50px;
+    width: 100px;
+    border: 2px solid pink;
+  }
+}
