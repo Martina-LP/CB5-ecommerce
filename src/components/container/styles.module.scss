@@ -8,10 +8,16 @@
   .leftColumn {
     width: 500px;
     height: calc(100vh - $header-height);
-    padding: 20px;
+    padding: 10px;
+    @media all and (max-width: 800px) {
+      & {
+        width: 100px;
+      }
+    }
   }
   .rightColumn {
     width: 100%;
     height: calc(100vh - $header-height);
+    padding: 10px;
   }
 }

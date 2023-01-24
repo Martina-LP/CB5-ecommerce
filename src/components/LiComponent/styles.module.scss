@@ -22,5 +22,10 @@
     font-size: 20px;
   }
   .label {
+    @media all and (max-width: 800px) {
+      & {
+        display: none;
+      }
+    }
   }
 }
