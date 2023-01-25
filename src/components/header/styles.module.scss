@@ -12,12 +12,35 @@
   .logo {
     h1 {
       color: black;
-      font-size: 24px;
+      font-size: 32px;
+    }
+    .test1 {
+      color: goldenrod;
+      &:hover {
+        color: black;
+      }
+    }
+    .test2 {
+      border: dotted;
+      border-radius: 6px;
+      padding: 2px;
+    }
+    .test3 {
+      text-decoration: underline;
     }
   }
   .btn {
     height: 50px;
     width: 100px;
-    border: 2px solid pink;
+    border: 2px solid goldenrod;
+    border-radius: 6px;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    &:hover {
+      background: goldenrod;
+      color: white;
+      border: 2px solid black;
+    }
   }
 }

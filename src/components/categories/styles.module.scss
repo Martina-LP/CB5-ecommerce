@@ -7,4 +7,33 @@
   h1 {
     font-size: 24px;
   }
+  .btnCat {
+    height: 40px;
+    width: 100px;
+    border: 2px solid goldenrod;
+    border-radius: 6px;
+    background: transparent;
+    font-weight: bold;
+    margin-top: 12px;
+    &:hover {
+      background: goldenrod;
+      color: white;
+      border: 2px solid black;
+    }
+  }
+  button {
+    height: 36px;
+    width: 40px;
+    border: 2px solid goldenrod;
+    border-radius: 6px;
+    background: transparent;
+    font-weight: bold;
+    padding: 4px;
+    margin: 0 4px;
+    &:hover {
+      background: goldenrod;
+      color: white;
+      border: 2px solid black;
+    }
+  }
 }

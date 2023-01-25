@@ -1,9 +1,17 @@
-import styles from "./styles.module.scss";
 import { TbTrash } from "react-icons/tb";
+import { DELETE } from "../../libs/HTTP";
+import styles from "./styles.module.scss";
 
-const DeleteBtn = () => {
+const DeleteBtn = ({ id, getData }) => {
+  const deleteEl = () => {
+    DELETE("categories", "/" + id).then(data => {
+      // console.log(data);
+      getData();
+    });
+  };
+
   return (
-    <button className={styles.main}>
+    <button onClick={() => deleteEl()} className={styles.main}>
       <TbTrash />
     </button>
   );
