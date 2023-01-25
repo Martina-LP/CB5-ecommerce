@@ -1,5 +1,5 @@
-import styles from "./styles.module.scss";
 import { TbRefresh } from "react-icons/tb";
+import styles from "./styles.module.scss";
 
 const RefreshBtn = ({ getData }) => {
   return (

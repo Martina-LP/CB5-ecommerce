@@ -1,11 +1,21 @@
-import styles from "./styles.module.scss";
+import { useState } from "react";
+import EditModal from "./../editModal";
 import { TbEdit } from "react-icons/tb";
+import styles from "./styles.module.scss";
 
-const EditBtn = ({ method }) => {
+const EditBtn = ({ data, getData }) => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
-    <button onClick={() => method()} className={styles.main}>
-      <TbEdit />
-    </button>
+    <>
+      {showModal && (
+        <EditModal getData={getData} data={data} setShowModal={setShowModal} />
+      )}
+
+      <button onClick={() => setShowModal(true)} className={styles.main}>
+        <TbEdit />
+      </button>
+    </>
   );
 };
 

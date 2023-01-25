@@ -1,7 +1,7 @@
-import styles from "./styles.module.scss";
 import RefreshBtn from "../refreshBtn";
 import EditBtn from "../editBtn";
 import DeleteBtn from "../deleteBtn";
+import styles from "./styles.module.scss";
 
 const Table = ({ categoriesState, getData, loading }) => {
   return (
@@ -24,8 +24,14 @@ const Table = ({ categoriesState, getData, loading }) => {
               <img src={item.image} alt={item.name} />
               <p className={styles.name}>{item.name.substring(0, 20)}</p>
               <div className={styles.btn}>
-                <EditBtn />
-                <DeleteBtn />
+                <EditBtn
+                  getData={getData}
+                  data={{ name: item.name, image: item.image, id: item.id }}
+                 />
+                <DeleteBtn 
+                  getData={getData}
+                  id={item.id}
+                />
               </div>
             </div>
           ))}

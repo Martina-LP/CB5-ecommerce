@@ -1,25 +1,28 @@
 .main {
+  height: 60px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   gap: 10px;
-  height: 50px;
   padding: 20px;
-  border-radius: 10px;
+  font-size: 18px;
+  font-weight: bold;
   transition: all 0.2s ease;
   cursor: pointer;
   svg path {
     transition: all 0.2s ease;
   }
   &:hover {
-    color: pink;
+    color: goldenrod;
   }
   &:hover svg path {
-    stroke: pink;
+    stroke: #404040;
   }
   .icon {
-    font-size: 20px;
+    font-size: 16px;
+    line-height: 18px;
+    margin-right: 8px;
   }
   .label {
     @media all and (max-width: 800px) {
@@ -27,5 +30,12 @@
         display: none;
       }
     }
+  }
+}
+
+.active {
+  color: goldenrod;
+  svg path {
+    stroke: #404040;
   }
 }
