@@ -1,0 +1,50 @@
+.main {
+  form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 20px;
+    input {
+      width: 50%;
+      padding: 5px 10px;
+      border: 1px solid goldenrod;
+      border-radius: 8px;
+      background-color: white;
+    }
+  }
+  img {
+    max-height: 100px;
+    width: 160px;
+    border-radius: 4px;
+  }
+  .btnPro {
+    height: 40px;
+    width: 80px;
+    border: 2px solid goldenrod;
+    border-radius: 6px;
+    background: transparent;
+    font-weight: bold;
+    margin: 12px 4px;
+    &:hover {
+      background: goldenrod;
+      color: white;
+      border: 2px solid black;
+    }
+  }
+  .btnSend {
+    height: 40px;
+    width: 80px;
+    border: 2px solid goldenrod;
+    border-radius: 6px;
+    background: transparent;
+    font-weight: bold;
+    margin: 12px 4px;
+    &:hover {
+      background: goldenrod;
+      color: white;
+      border: 2px solid black;
+    }
+  }
+}
