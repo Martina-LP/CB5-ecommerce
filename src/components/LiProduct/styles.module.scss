@@ -1,4 +1,10 @@
 .main {
+  .checkbox {
+    margin: 8px;
+    zoom: 1.4;
+    vertical-align: sub;
+    accent-color: goldenrod;
+  }
   form {
     display: flex;
     flex-direction: column;

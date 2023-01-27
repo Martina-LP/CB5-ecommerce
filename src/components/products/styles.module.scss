@@ -13,4 +13,17 @@
     font-weight: bold;
     list-style-type: none;
   }
+  button {
+    height: 40px;
+    width: 146px;
+    border: 2px solid goldenrod;
+    border-radius: 6px;
+    background: transparent;
+    font-weight: bold;
+    &:hover {
+      background: goldenrod;
+      color: white;
+      border: 2px solid black;
+    }
+  }
 }
